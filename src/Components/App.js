@@ -1,9 +1,10 @@
 import '../App.css';
-import Header from './Header';
-import CreateAStory from './CreateAStory';
-import DisplayStory from './DisplayStory';
-import EditStory from './EditStory';
-import Home from './Home';
+import Header from './Header/Header';
+// import CreateAStory from './Pages/CreateAStory';
+import DisplayStory from './Pages/DisplayStory';
+import CreateEditStory from './Pages/CreateEditStory';
+// import EditStory from './Pages/EditStory';
+import Home from './Pages/Home';
 import {Route, Switch } from "react-router-dom";
 
 function App() {
@@ -15,13 +16,15 @@ function App() {
             <Home />
           </Route>
           <Route path="/CreateAStory">
-            <CreateAStory />
+          <CreateEditStory/>
+            {/* <CreateAStory /> */}
           </Route>
           <Route path="/DisplayStory/:id">
             <DisplayStory />
           </Route>
           <Route path="/EditStory/:id">
-            <EditStory />
+            <CreateEditStory/>
+            {/* <EditStory /> */}
           </Route>
         </Switch>
     </div>

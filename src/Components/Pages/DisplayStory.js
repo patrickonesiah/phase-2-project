@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useHistory } from "react-router-dom";
-import Like from './Like';
+import Like from '../Like';
 
 function DisplayStory() {
     const [project, setProject] = useState(null);

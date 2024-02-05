@@ -1,5 +1,5 @@
-import Stories from './Stories';
-import UserProfile from './UserProfile';
+import Stories from '../Stories/Stories';
+import UserProfile from '../UserProfile';
 import React from 'react';
 
 function Home() {

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams, useHistory } from "react-router-dom";
+import { useParams, useHistory, useLocation } from "react-router-dom";
 
 function EditStory() {
     const [project, setProject] = useState([]);
@@ -12,6 +12,9 @@ function EditStory() {
     const [newMainImg, setNewMainImg] = useState("")
     const { id } = useParams()
     const history = useHistory();
+    const location = useLocation();
+
+    console.log(location.hash)
 
     const updateData = () => {
         fetch(`https://narrativegrovedb.onrender.com/stories/${id}`)

@@ -29,7 +29,7 @@ function Stories() {
   const storiesCards = stories.map((storyObj) => (
     <Story
       key={storyObj.id}
-      stories={storyObj}
+      story={storyObj}
       onDeleteStories={handleDeleteStories}
     />
   ));
